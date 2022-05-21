@@ -1,16 +1,15 @@
 import React from 'react';
-import {View, Text, Image, Button} from 'react-native';
+import {View, Text, Image, Button, ImageBackground} from 'react-native';
 import telaprincipal from '../../assets/TelaPrincipal.png';
 import style from './style';
 
 export default function TelaPrincipal (props){
     return(
-     <View style={style.container1}>
+     <ImageBackground source = {telaprincipal} style={style.container1}>
 
             <View style={style.container2}>
                 <Text style={style.titulo}>Paraty</Text>
-                <Text style={style.descricao}>Saiba o que visitar em paraty.</Text>
-                <Image source = {telaprincipal} style = {style.img}/>
+                <Text style={style.descricao}>Saiba o que visitar em paraty.</Text>               
 
                 <View style={style.buttom}>
                 <Button title="Restaurantes" onPress={ () => props.navigation.navigate('Restaurantes')} color="#372d00"/>
@@ -24,6 +23,6 @@ export default function TelaPrincipal (props){
 
             </View>
 
-    </View>
+    </ImageBackground>
     )
 };

@@ -3,14 +3,13 @@ import {StyleSheet} from 'react-native';
 const style = StyleSheet.create({
     container1:{
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: 'ele3e4',               
+        justifyContent: 'flex-end',
+        alignItems: 'center',            
     },
     container2:{
         backgroundColor: 'white',
         width: 320,
-        height: 500,
+        height: 230,
         borderRadius: 5,
         borderWidth: 1,
         borderColor: '979797'
@@ -19,12 +18,12 @@ const style = StyleSheet.create({
         fontSize: 26,
         fontWeight:'bold',
         textAlign: 'center',
-        marginBottom: 10
+        marginBottom: 5
     },
     descricao:{
         fontSize: 18,
         textAlign: 'center',
-        marginBottom: 20
+        marginBottom: 10
     },
     img:{
         alignSelf: 'center',
@@ -35,8 +34,7 @@ const style = StyleSheet.create({
     },
     buttom:{
         borderRadius: 15,
-        marginBottom: 5,
-        padding: 8
+        padding: 5
     },
 });
 
