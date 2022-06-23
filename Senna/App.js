@@ -5,7 +5,6 @@ import {createTabNavigator} from '@react-navigation/bottom-tabs';
 import TelaPrincipal from "./Components/TelaPrincipal/";
 import Restaurantes from "./Components/Restaurantes/";
 import Passeios from "./Components/Passeios/";
-import Hospedagem from "./Components/Hospedagem/";
 
 const Tab = createTabNavigator();
 
