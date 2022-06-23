@@ -12,7 +12,8 @@ const style = StyleSheet.create({
         height: 230,
         borderRadius: 5,
         borderWidth: 1,
-        borderColor: '979797'
+        borderColor: '979797',
+        marginBottom: 20
     },
     titulo:{
         fontSize: 26,
