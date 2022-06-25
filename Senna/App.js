@@ -2,9 +2,9 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
-import TelaInicio from "./Componets/inicio/";
-//import TelaSobre from "./Components/sobre/";
-//import TelaVitorias from "./Components/vitorias/";
+import TelaInicio from "./Components/inicio/";
+import TelaSobre from "./Components/sobre/";
+import TelaVitorias from "./Components/vitorias/";
 
 const Tabs = createBottomTabNavigator();
 
