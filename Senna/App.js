@@ -1,20 +1,20 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {createbottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import TelaInicio from "./Components/inicio/";
-import Telasobre from "./Components/sobre/";
+import TelaSobre from "./Components/sobre/";
 import TelaVitorias from "./Components/vitorias/";
 
-const Tabs = createbottomTabNavigator();
+const Tabs = createBottomTabNavigator();
 
 export default function App() {
   return(
     <NavigationContainer>
       <Tabs.Navigator>
-        <Tabs.Screen name="Início" component={inicio}/>
-        <Tabs.Screen name="Restaurantes" component={sobre}/>
-        <Tabs.Screen name="Passeios" component={vitorias}/>
+        <Tabs.Screen name="Início" component={TelaInicio}/>
+        <Tabs.Screen name="Sobre" component={TelaSobre}/>
+        <Tabs.Screen name="Vitórias" component={TelaVitorias}/>
       </Tabs.Navigator>
     </NavigationContainer>
   )
