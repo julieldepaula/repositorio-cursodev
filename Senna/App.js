@@ -1,21 +1,55 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { Entypo, FontAwesome5 } from '@expo/vector-icons';
 
-import TelaInicio from "./Components/inicio/";
-import TelaSobre from "./Components/sobre/";
-import TelaVitorias from "./Components/vitorias/";
+import TelaInicio from "./components/inicio/";
+import TelaSobre from "./components/sobre/";
+import TelaVitorias from "./components/vitorias/";
 
 const Tabs = createBottomTabNavigator();
 
 export default function App() {
-  return(
+  return (
 
     <NavigationContainer>
-      <Tabs.Navigator>
-        <Tabs.Screen name="Início" component={TelaInicio}/>
-        <Tabs.Screen name="Sobre" component={TelaSobre}/>
-        <Tabs.Screen name="Vitórias" component={TelaVitorias}/>
+      <Tabs.Navigator ScreenOptions={{
+         headerStyle:{
+          backgroundColor: '#eecb01'
+         },
+         headerTitleStyle: {
+          color: '#000',
+          fontWeight: 'bold'
+        },
+      }}>
+
+        <Tabs.Screen 
+        name="Início" 
+        component={TelaInicio}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <Entypo name="home" color={ color } size={ 20 } />
+          ),
+        }}
+        />
+        <Tabs.Screen 
+        name="Sobre" 
+        component={TelaSobre}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <FontAwesome5 name="question-circle" color={ color } size={ 20 } />
+          ),
+        }}
+        />
+        <Tabs.Screen 
+        name="Vitórias" 
+        component={TelaVitorias}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <FontAwesome5 name="trophy" color={ color } size={ 20 } />
+          ),
+        }}
+        />
       </Tabs.Navigator>
     </NavigationContainer>
 
