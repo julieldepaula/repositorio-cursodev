@@ -3,9 +3,9 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { Entypo, FontAwesome5 } from '@expo/vector-icons';
 
-import TelaInicio from "./components/inicio/";
-import TelaSobre from "./components/sobre/";
-import TelaVitorias from "./components/vitorias/";
+import TelaInicio from "./components/inicio/index";
+import TelaSobre from "./components/sobre/index";
+import TelaVitorias from "./components/vitorias/index";
 
 const Tabs = createBottomTabNavigator();
 
@@ -21,6 +21,10 @@ export default function App() {
           color: '#000',
           fontWeight: 'bold'
         },
+        tabBarActiveTintColor: '#ba171a',
+        tabBarInactiveTintColor: "#000",
+        tabBarActiveBackgroundColor: "#fff",
+        tabBarStyle: { backgroundColor: "#eecb01"},
       }}>
 
         <Tabs.Screen 
