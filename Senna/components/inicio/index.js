@@ -7,7 +7,7 @@ import style from './style';
 
 export default function TelaPrincipal () {
     return(
-     <ImageBackground source={ Imagem } style={style.Fundo} blurRadius={10} resizeMode= "cover" >
+     <ImageBackground source={ Imagem } style={style.Fundo} blurRadius={5} resizeMode= "cover" >
 
         <View>
         <Image source={Imagem2} style={style.img}/>

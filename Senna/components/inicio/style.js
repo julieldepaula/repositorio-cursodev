@@ -32,6 +32,7 @@ const style = StyleSheet.create ({
   
   titulo:{
     fontSize: 22,
+    fontWeight: 'bold',
     color: 'white',
     marginBottom: 5,
     
