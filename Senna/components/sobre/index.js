@@ -9,5 +9,4 @@ export default function TelaSobre () {
     return(
         <Text> teste</Text>
     )
-   
 };

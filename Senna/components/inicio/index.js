@@ -7,20 +7,6 @@ import style from './style';
 
 export default function TelaPrincipal () {
     return(
-
-     <ImageBackground source = {background} style={style.background}>
-
-        <View>
-
-            <Image source = {fotocapa} style = {fotocapa}/>
-
-            <Text> </Text>
-
-        </View>
-
-     
-     </ImageBackground>
-
-
+        <Text> teste</Text>
      )
 };
