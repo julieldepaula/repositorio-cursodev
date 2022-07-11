@@ -4,7 +4,8 @@ const style = StyleSheet.create ({
 
   container1:{
     flex: 1,
-    alignItems: 'center'    
+    alignItems: 'center',
+    backgroundColor: '#fff',
     
   },
 
@@ -16,17 +17,24 @@ const style = StyleSheet.create ({
   img:{
     width: 350,
     height: 200,
-    
+    borderRadius: 5,
+    marginBottom: 10
   },
 
   conteudo:{
-    fontSize: 16
+    fontSize: 16,
+    marginBottom: 20
     
+  },
+  
+  containerbox:{
+    flex: 'row',
+    marginBottom: 20,
   },
   
   imgbox:{
     width: 100,
-    height: 150,
+    height: 100,
   },
   
   titulobox:{
