@@ -4,32 +4,41 @@ const style = StyleSheet.create ({
 
   container1:{
     flex: 1,
-    alignItems: 'center',
     backgroundColor: '#fff',
     
   },
 
+  boxTitulo:{
+    padding: 10,
+  },
+
   Titulo:{
     fontSize: 22,
-    fontWeight: 'bold'    
+    fontWeight: 'bold',
+    margin: 10,   
   },
   
   img:{
-    width: 350,
+    width: '100%',
     height: 200,
     borderRadius: 5,
     marginBottom: 10
   },
 
   conteudo:{
-    fontSize: 16,
-    marginBottom: 20
+    fontWeight: "bold",
+    color: '#757575',
+    marginBottom: 20,
     
   },
   
   containerbox:{
-    flex: 'row',
+    flexDirection: "row",
     marginBottom: 20,
+    borderTopColor: '#d5d5d5',
+    borderTopWidth: 1,
+    borderBottomColor: '#d5d5d5',
+    borderBottomWidth: 1,
   },
   
   imgbox:{
@@ -37,11 +46,19 @@ const style = StyleSheet.create ({
     height: 100,
   },
   
+  textobox:{
+    flex: 1,
+    padding: 10,
+  },
+
   titulobox:{
-    
+    fontWeight: "bold",
+    fontSize: 18,
   },
   
-  descricaobox:{
+  conteudobox:{
+    fontWeight: "bold",
+    fontSize: 18,
     
   },
 });
