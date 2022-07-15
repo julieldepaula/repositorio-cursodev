@@ -13,7 +13,7 @@ export default function App() {
   return (
 
     <NavigationContainer>
-      <Tabs.Navigator ScreenOptions={{
+      <Tabs.Navigator screenOptions={{
          headerStyle:{
           backgroundColor: '#eecb01'
          },
